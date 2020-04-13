@@ -1,22 +1,24 @@
 <div class="container">
   <div class="container-home">
-    <div class="image">
-      <%= image_tag ("logos/deckDesign-2.png"), class: "logo-image" %>
-    </div>
+   
     <h1 class="homepage-header">Deck Design</h1>
     <div class="services-box">
-
-      <div class="col-12 services-provided garden-design-box">
-        <h2>Garden Design</h2>  
-      </div>
-
+      <%= link_to designs_index_path do %>
+        <div class="col-12 services-provided garden-design-box">
+          <h2>Garden Design</h2>  
+        </div>
+      <% end %>
+      <%= link_to deckings_index_path do %>
         <div class="col-12 services-provided decking-box">
           <h2>Decking</h2>
         </div>
+      <% end %>
+
+      <%= link_to patios_index_path do %>
         <div class="col-12 services-provided patio-box">
           <h2>Patio</h2>
         </div>
-      
+      <% end %>
     </div>
   </div>
 </div>

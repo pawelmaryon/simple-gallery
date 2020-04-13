@@ -1,4 +1,7 @@
 class DeckingsController < ApplicationController
+  def index
+  end
+
   def budget
   end
 
