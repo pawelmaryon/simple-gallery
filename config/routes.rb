@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'designs/index'
   get 'patios/sandstone'
   get 'patios/limestone'
   get 'patios/granite'
