@@ -1,1 +1,44 @@
 // Specific CSS for your home-page
+
+.container-home {
+  height: 100vh;
+  .homepage-header {
+    text-align: center;
+  }
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo-image {
+      text-align: center;
+    }
+  }
+  
+  .services-box {
+    
+    
+  
+    .services-provided {
+      background: rgb(150, 150, 150);
+      text-align: center;
+      padding: 10px;
+      height: 20vh;
+      margin-bottom: 10px;
+    }
+    .garden-design-box {
+    
+    }
+    .decking-patio-box {
+      display: flex;
+    
+      .decking-box {
+      
+     
+      }
+      .patio-box {
+      
+      }
+    }
+  }
+
+}
