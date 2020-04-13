@@ -1,4 +1,8 @@
 class PatiosController < ApplicationController
+  def index
+    
+  end
+  
   def sandstone
   end
 

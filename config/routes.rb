@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   get 'designs/index'
+  get 'patios/index'
   get 'patios/sandstone'
   get 'patios/limestone'
   get 'patios/granite'
+  get 'deckings/index'
   get 'deckings/budget'
   get 'deckings/softwood'
   get 'deckings/hardwood'
