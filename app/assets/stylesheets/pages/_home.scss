@@ -1,18 +1,18 @@
 // Specific CSS for your home-page
-
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    .logo-image {
+      text-align: center;
+    }
 .container-home {
   height: 100vh;
   .homepage-header {
     text-align: center;
   }
-  .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-      .logo-image {
-        text-align: center;
-      }
+  
   
   .services-box {
     
