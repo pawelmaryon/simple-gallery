@@ -1,4 +1,13 @@
 // Specific CSS for your home-page
+.links {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
 .image {
   display: flex;
   justify-content: center;
@@ -12,8 +21,7 @@
   .homepage-header {
     text-align: center;
   }
-  
-  
+
   .services-box {
     
     
