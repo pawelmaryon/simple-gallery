@@ -1,0 +1,25 @@
+.material-list {
+  display: flex;
+  width: 60vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .material-types {
+    margin-bottom: 20px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 7px;
+    text-align: center;
+    .material-button {
+      padding: 15px 20px;
+      color: black;
+      &:hover {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+.material-names {
+  font-size: 2rem;
+  padding: 15px 25px;
+}
