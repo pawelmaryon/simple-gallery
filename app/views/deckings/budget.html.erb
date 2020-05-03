@@ -1,4 +1,16 @@
 <%= render "decking_page" %>
 
-<h1>Budget Decking</h1>
-<p>Find me in app/views/deckings/budget.html.erb</p>
+<div class="row">
+  <div class="col-sm gallery-styling">
+     <%= cl_image_tag("Deck%20Design/Decking/budget/budget-decking-treated-pine%20wood.jpg", :height=>300, :transformation=>["deckDesign-gallery"], :width=>300, :crop=>"fill") %>
+  </div>
+  <div class="col-sm gallery-styling gallery-second">
+    <%= cl_image_tag("Deck%20Design/Decking/budget/Budget-decking-pine-platform.jpg", :height=>300, :transformation=>["deckDesign-gallery"], :width=>300, :crop=>"fill") %>
+  </div>
+  <div class="col-sm gallery-styling gallery-second">
+    <%= cl_image_tag("Deck%20Design/Decking/budget/budget-decking-pine.jpg", :transformation=>[
+  {:gravity=>"west", :height=>300, :width=>300, :x=>0, :zoom=>1, :crop=>"fill"},
+  {:overlay=>"logo:deckDesign-logo.png", :opacity=>25}
+  ]) %>
+  </div>
+</div>
