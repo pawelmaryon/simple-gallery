@@ -1,0 +1,21 @@
+.page-headers{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
+.page-links {
+  display: flex;
+  &:hover{
+    text-decoration: none;
+  }
+  h2 {
+    color: black;
+    background-color: rgb(150, 150, 150);
+    padding: 15px 25px;
+    border-radius: 7px;
+    &:hover {
+      text-decoration: none;
+      color: white;
+      background: rgb(140, 140, 140);
+    }
+  }
+}
