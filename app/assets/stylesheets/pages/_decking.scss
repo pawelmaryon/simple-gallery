@@ -1,6 +1,5 @@
 .material-list {
   display: flex;
-  width: 60vw;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -9,6 +8,9 @@
     background-color: rgb(150, 150, 150);
     border-radius: 7px;
     text-align: center;
+    &:hover {
+      background: rgb(140, 140, 140);
+    }
     .material-button {
       padding: 15px 20px;
       color: black;
@@ -22,4 +24,10 @@
 .material-names {
   font-size: 2rem;
   padding: 15px 25px;
+}
+
+// GALLERY
+
+.gallery-styling {
+  height: 300px;
 }
