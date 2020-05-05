@@ -9,13 +9,14 @@
   }
   h2 {
     color: black;
-    background-color: rgb(150, 150, 150);
+   
     padding: 15px 25px;
     border-radius: 7px;
+    font-family: 'Bebas Neue', cursive;
     &:hover {
       text-decoration: none;
       color: white;
-      background: rgb(140, 140, 140);
+      background: rgba(140, 140, 140, 0.1);
     }
   }
 }
