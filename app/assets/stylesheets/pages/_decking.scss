@@ -5,11 +5,11 @@
   flex-direction: column;
   .material-types {
     margin-bottom: 20px;
-    background-color: rgb(150, 150, 150);
+   
     border-radius: 7px;
     text-align: center;
     &:hover {
-      background: rgb(140, 140, 140);
+      background: rgba(140, 140, 140, 0.1);
     }
     .material-button {
       padding: 15px 20px;
@@ -24,6 +24,7 @@
 .material-names {
   font-size: 2rem;
   padding: 15px 25px;
+  font-family: 'Bebas Neue', cursive;
 }
 
 // GALLERY
