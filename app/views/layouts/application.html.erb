@@ -11,11 +11,7 @@
   </head>
   <body>
   <div class="container">
-   <div class="image">
-   <%= link_to root_path, class:"links" do  %>
-      <%= image_tag ("logos/deckDesign-2.png"), class: "logo-image" %>
-      <% end %>
-    </div>
+    <%= render "pages/navbar" %>
     <%= yield %>
 
     <%= javascript_pack_tag 'application' %>

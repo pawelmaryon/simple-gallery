@@ -1,4 +1,7 @@
 // Specific CSS for your home-page
+.container {
+  background: rgb(134, 131, 109);
+}
 .links {
   text-decoration: none;
   color: black;
@@ -17,7 +20,7 @@
       text-align: center;
     }
 .container-home {
-  background-image: url('https://res.cloudinary.com/dyvaldrrq/image/upload/c_fill,w_1042/v1588277202/Deck%20Design/Decking/hardwood/hardwood-decking-modern.jpg');
+
   height: 100vh;
   .homepage-header {
     text-align: center;

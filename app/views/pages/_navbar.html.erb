@@ -1,0 +1,33 @@
+ <div class="navbar-list ">
+  <div class="col-5 navbar-boxes" >
+    <div class="material-types">
+      <%= link_to designs_index_path, class:"material-button" do %>     
+          <h2 class="navbar-names">Garden Design</h2>       
+      <% end %>
+    </div>
+    <div class="material-types">
+      <%= link_to deckings_index_path, class:"material-button" do %>    
+          <h2 class="navbar-names">Decking</h2>   
+      <% end %>
+    </div>
+  </div>
+  <div class="col-2 navbar-boxes" >
+    <div class="image">
+      <%= link_to root_path, class:"links" do  %>
+        <%= image_tag ("logos/deckDesign-2.png"), class: "logo-image" %>
+      <% end %>
+    </div>
+  </div>
+  <div class="col-5 navbar-boxes" >
+    <div class="material-types">
+      <%= link_to patios_index_path, class:"material-button" do %>  
+          <h2 class="navbar-names">Patio</h2>        
+      <% end %>
+    </div>
+    <div class="material-types">
+      <%= link_to patios_index_path, class:"material-button" do %>  
+          <h2 class="navbar-names">About</h2>        
+      <% end %>
+    </div>
+  </div>
+</div>
