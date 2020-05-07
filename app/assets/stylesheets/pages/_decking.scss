@@ -3,14 +3,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
   .material-types {
     margin-bottom: 20px;
    
     border-radius: 7px;
     text-align: center;
-    &:hover {
-      background: rgba(140, 140, 140, 0.1);
-    }
     .material-button {
       padding: 15px 20px;
       color: black;
@@ -20,9 +18,9 @@
       }
     }
   }
-}
+
 .material-names {
-  font-size: 2rem;
+  font-size: 4rem;
   padding: 15px 25px;
   font-family: 'Bebas Neue', cursive;
 }
