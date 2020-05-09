@@ -1,6 +1,7 @@
 // Specific CSS for your home-page
 .container {
   background: rgba(134, 131, 109,0.8);
+  height: 100vh;
 }
 .links {
   text-decoration: none;
@@ -21,10 +22,12 @@
       width: 100px;
     }
 .container-home {
-
-  height: 100vh;
+  background: rgba(134, 131, 109,0.5);
+  height: 88vh;
+  
   .homepage-header {
     text-align: center;
     font-family: 'Bebas Neue', cursive;
+    padding-top: 20px;
   }
 }
