@@ -2,24 +2,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  padding-top: 150px;
+ 
 }
   .material-types {
     border-radius: 7px;
     text-align: center;
+    &:hover{
+      background: rgb(54, 53, 55);
+      padding: 0 10px;
+      height: 66px;
+      color: white;
+    }
     .material-button {
       padding: 15px 20px;
       color: black;
       &:hover {
         text-decoration: none;
         color: white;
+  
       }
     }
   }
 
 .material-names {
-  font-size: 4rem;
-  
+  font-size: 3rem;
+  width: fit-content;
   font-family: 'Bebas Neue', cursive;
 }
 
