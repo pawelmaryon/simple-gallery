@@ -2,12 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
+  padding-top: 214px;
  
 }
   .material-types {
     border-radius: 7px;
     text-align: center;
+    padding: 0 10px;
     &:hover{
       background: rgb(54, 53, 55);
       padding: 0 10px;
@@ -24,13 +25,43 @@
       }
     }
   }
+  .material-types-decking {
+    border-radius: 7px;
+    text-align: center;
+
+    &:hover{
+      padding: 0 10px;
+   
+      .material-button {
+        text-decoration: none;
+        color: white; 
+      }
+    }
+    .material-button {
+      padding: 15px 20px;
+      color: black;
+      &:hover {
+        text-decoration: none;
+        color: white;
+  
+      }
+   
+    }
+  }
 
 .material-names {
   font-size: 3rem;
   width: fit-content;
   font-family: 'Bebas Neue', cursive;
+  margin: 0 auto;
+  
 }
 
+.row {
+  align-items: center;
+  width: -webkit-fill-available;
+  margin: 0;
+}
 // GALLERY
 
 .gallery-styling {
