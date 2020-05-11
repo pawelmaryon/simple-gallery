@@ -9,11 +9,12 @@ gem 'rails', '6.0.2.2'
 gem 'redis'
 
 gem 'cloudinary', '~> 1.12.0'
+gem 'simple_form'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'sassc-rails'
-gem 'simple_form'
+
 gem 'uglifier'
 gem 'webpacker'
 
