@@ -4,11 +4,13 @@
   align-items: center;
   padding-top: 21vh;
  
+ 
 }
   .material-types {
     border-radius: 7px;
     text-align: center;
     padding: 0 10px;
+    width: 50%;
     &:hover{
       background: rgb(54, 53, 55);
       padding: 0 10px;
@@ -66,4 +68,18 @@
 
 .gallery-styling {
   height: 300px;
+}
+
+.decking-description {
+  height: 36vh;
+  background: rgb(240,240,240);
+  margin-top: 2vh;
+
+  h1 {
+    padding: 15px 25px;
+  }
+  p {
+    padding: 15px 25px;
+    
+  }
 }
