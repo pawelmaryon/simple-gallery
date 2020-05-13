@@ -1,0 +1,13 @@
+<%= simple_form_for  @form do |f|%>
+<%= f.label :name %>
+<%= f.text_fiels :name %>
+<%= f.label :surname %>
+<%= f.text_field :surname %>
+<%= f.label :mobile %>
+<%= f.integer :mobile %>
+<%= f.label :email %>
+<%= f.text_field :email %>
+<%= f.label :budget %>
+<%= f.integer :budget %>
+<%= f.submit %>
+<% end %>

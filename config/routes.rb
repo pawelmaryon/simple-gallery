@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'enquires/new'
+  get 'enquires/create'
   get 'designs/index'
   get 'patios/index'
   get 'patios/sandstone'
