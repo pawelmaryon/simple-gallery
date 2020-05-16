@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'forms/show'
+  get 'forms/new'
+  get 'forms/create'
   get 'designs/index'
   get 'patios/index'
   get 'patios/sandstone'
@@ -10,5 +13,7 @@ Rails.application.routes.draw do
   get 'deckings/hardwood'
   get 'pages/about'
   root to: 'pages#home'
+  resources :forms, only: [:show, :new, :create]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
 end
