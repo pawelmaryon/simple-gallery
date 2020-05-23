@@ -8,8 +8,9 @@ class FormsController < ApplicationController
 
   def create
     @form = Form.new(form_params)
-    @form.save
-    
+    if @form.save
+      redirect_to root_path
+    end
   end
 
   private
