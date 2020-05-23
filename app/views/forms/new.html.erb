@@ -1,15 +1,21 @@
 <%= simple_form_for (@form) do |f| %>
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name %>
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name %>
-  <%= f.label :address %>
-  <%= f.text_field :address %>
-  <%= f.label :email %>
-  <%= f.text_field :email %>
-  <%= f.label :"description" %>
-  <%= f.text_field :"description" %>
-  <%= f.label :mobile %>
-  <%= f.text_field :mobile %>
-  <%= f.submit %>
+  <%= f.input :first_name, 
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "first_name" }%>
+  <%= f.input :last_name, 
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "last_name" }%>
+  <%= f.input :address %>
+
+  <%= f.input :email,
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "email" }%>
+  <%= f.input :"description",
+                required: true,
+                autofocus: true,
+                input_html: { autocomplete: "description" }%>
+  <%= f.submit "Submit", class: "btn btn-secondary btn-lg btn-block" %>
 <% end %>
