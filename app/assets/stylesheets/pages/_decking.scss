@@ -91,3 +91,16 @@
   background: rgb(222, 213, 203);
   height: 2vh;
 }
+.sticky-modal {
+  position: sticky;
+  bottom: 9px;
+    .btn {
+      position: absolute;
+      bottom: 22px;
+      right: 10px;
+    }
+    .btn-secondary  {
+      background: rgb(82, 73, 66);
+      border-color:rgb(82, 73, 66)
+    }
+}
