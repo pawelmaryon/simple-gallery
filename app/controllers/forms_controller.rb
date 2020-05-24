@@ -10,6 +10,8 @@ class FormsController < ApplicationController
     @form = Form.new(form_params)
     if @form.save
       redirect_to root_path
+    else  
+      render :new
     end
   end
 
