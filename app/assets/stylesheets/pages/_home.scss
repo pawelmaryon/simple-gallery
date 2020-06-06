@@ -1,3 +1,17 @@
+body  {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: rgb(222, 213, 203);
+  &:hover {
+    color: white;
+  }
+  &:active {
+    color: white;
+  }
+}
+
 // Specific CSS for your home-page
 .container {
   background: rgba(202, 183, 162,0.5);
