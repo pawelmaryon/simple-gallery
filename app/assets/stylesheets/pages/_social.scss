@@ -1,0 +1,33 @@
+.social-bar {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  padding-inline-start:0;
+  text-align: center;
+  position: fixed;
+  z-index: 2;
+  top: 93% !important;
+  right: 102px;
+  list-style: none;
+  width: 40px;
+  background: rgba(82, 73, 66, 0.5);
+  width: auto;
+  .fab  {
+    font-size: 2rem;
+    &:hover {
+      color: white;
+    }
+  }
+  .fas {
+    font-size: 2rem;
+    &:hover {
+      color: white;
+    }
+  }
+  .fa-envelope {
+        font-size: 1.75rem;
+      }
+  li {
+    padding: 5px;
+  }
+}
