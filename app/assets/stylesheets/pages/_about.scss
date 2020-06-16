@@ -1,12 +1,14 @@
 .container-overlay  {
   height: 100%;
   background: rgba(20, 20, 20, 0.1);
+  
   .empty-box {
     height: 28vh;
   }
   .about-box {
     height: 36vh;
     background: rgb(222, 213, 203);
+    
     h1 {
       padding: 15px 25px;
     }

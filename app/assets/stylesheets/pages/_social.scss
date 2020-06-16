@@ -1,27 +1,27 @@
 .social-bar {
+  background: rgba(83, 74, 65, 0.1);
   justify-content: space-evenly;
   display: flex;
   align-items: center;
   padding-inline-start:0;
   text-align: center;
-  position: fixed;
   z-index: 2;
-  top: 93% !important;
-  right: 102px;
   list-style: none;
   width: 40px;
-  background: rgba(82, 73, 66, 0.5);
+ 
   width: auto;
   .fab  {
     font-size: 2rem;
+    color: black;
     &:hover {
-      color: white;
+      color: #363537;
     }
   }
   .fas {
+    color: black;
     font-size: 2rem;
     &:hover {
-      color: white;
+      color: #363537;
     }
   }
   .fa-envelope {

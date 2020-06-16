@@ -1,0 +1,62 @@
+  // Mobile
+
+  @media(max-width: 768px) {
+    .navbar-list {
+      .navbar-boxes{
+        .logo-image {
+          width:75px;
+        }
+        .navbar-names {
+          font-size: 1rem;
+        }
+      }
+    }
+    .container-home {
+      height: 85vh;
+      .homepage-header {
+        text-align: center;
+        padding-top: 20px;
+        width: 30%;
+        position: absolute;
+        left: 38%;
+        top: 32%;
+    
+        h1 {
+          font-size: 1.25rem;
+        }
+      }
+    }
+    .social-bar {
+      margin-top: 10px;
+      margin-bottom: 0;
+      position: sticky;
+      bottom: 5px;
+      .fab {
+        font-size: 1.25rem;
+        &:hover {
+          color: whitesmoke;
+        }
+      }
+      .fas {
+        font-size: 1.25rem;
+        &:hover {
+          color: whitesmoke;
+        }
+      }
+    }
+    .material-names {
+      font-size: 2rem;
+    }
+    .row {
+      justify-content: center;
+    }
+    .decking-description {
+      background: #f0f0f0;
+      margin-top: 2vh;
+      margin-left: 4vw;
+      width: 91%;
+    }
+    .about-box {
+      overflow: scroll;
+    }
+  }
