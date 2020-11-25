@@ -1,62 +1,210 @@
-  // Mobile
+// Mobile
 
-  @media(max-width: 768px) {
-    .navbar-list {
-      .navbar-boxes{
-        .logo-image {
-          width:75px;
-        }
-        .navbar-names {
-          font-size: 1rem;
-        }
+@media (max-width: 768px) {
+  .navbar-list {
+    .navbar-boxes {
+      .logo-image {
+        width: 75px;
       }
-    }
-    .container-home {
-      height: 85vh;
-      .homepage-header {
-        text-align: center;
-        padding-top: 20px;
-        width: 30%;
-        position: absolute;
-        left: 38%;
-        top: 32%;
-    
-        h1 {
-          font-size: 1.25rem;
-        }
+      .navbar-names {
+        font-size: 1rem;
       }
-    }
-    .social-bar {
-      margin-top: 10px;
-      margin-bottom: 0;
-      position: sticky;
-      bottom: 5px;
-      .fab {
-        font-size: 1.25rem;
-        &:hover {
-          color: whitesmoke;
-        }
-      }
-      .fas {
-        font-size: 1.25rem;
-        &:hover {
-          color: whitesmoke;
-        }
-      }
-    }
-    .material-names {
-      font-size: 2rem;
-    }
-    .row {
-      justify-content: center;
-    }
-    .decking-description {
-      background: #f0f0f0;
-      margin-top: 2vh;
-      margin-left: 4vw;
-      width: 91%;
-    }
-    .about-box {
-      overflow: scroll;
     }
   }
+  .container-home {
+    height: 85vh;
+    .homepage-header {
+      text-align: center;
+      padding-top: 20px;
+      width: 30%;
+      h1 {
+        display: none;
+        font-size: 1.25rem;
+      }
+    }
+  }
+  .social-bar {
+    margin-top: 10px;
+    margin-bottom: 0;
+    position: sticky;
+    bottom: 5px;
+    .fab {
+      font-size: 1.25rem;
+      &:hover {
+        color: whitesmoke;
+      }
+    }
+    .fas {
+      font-size: 1.25rem;
+      &:hover {
+        color: whitesmoke;
+      }
+    }
+  }
+  .material-names {
+    font-size: 2rem;
+  }
+  .row {
+    justify-content: center;
+  }
+  .decking-description {
+    background: #f0f0f0;
+    margin-top: 2vh;
+    margin-left: 4vw;
+    width: 91%;
+  }
+  .about-box {
+    overflow: scroll;
+  }
+}
+.search-input {
+  flex-direction: column;
+  .res-768px {
+    padding: 20;
+  }
+  .col-7 {
+    max-width: none;
+  }
+  .col-5 {
+    max-width: none;
+  }
+  .btn-lg {
+    margin-bottom: 9px;
+  }
+}
+
+// 1200 responsiveness
+@media (max-width: 1200px) {
+  .navbar-list {
+    .navbar-boxes {
+      .logo-image {
+        width: 75px;
+      }
+      .navbar-names {
+        font-size: 1rem;
+      }
+    }
+  }
+  .container-home {
+    height: 50vh;
+    .homepage-header {
+      text-align: center;
+      padding-top: 375px;
+      width: 54%;
+
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
+  }
+  .social-bar {
+    margin-top: 10px;
+    margin-bottom: 0;
+    position: sticky;
+    bottom: 5px;
+    .fab {
+      font-size: 1.25rem;
+      &:hover {
+        color: whitesmoke;
+      }
+    }
+    .fas {
+      font-size: 1.25rem;
+      &:hover {
+        color: whitesmoke;
+      }
+    }
+  }
+  .material-names {
+    font-size: 2rem;
+  }
+  .row {
+    justify-content: center;
+  }
+  .decking-description {
+    background: #f0f0f0;
+    margin-top: 2vh;
+    margin-left: 4vw;
+    width: 91%;
+  }
+  .about-box {
+    overflow: scroll;
+  }
+}
+.btn-lg {
+  font-size: 1.05rem;
+  padding: 9px;
+}
+// 992px respons
+@media (max-width: 992px) {
+  .navbar-list {
+    .navbar-boxes {
+      .logo-image {
+        width: 75px;
+      }
+      .navbar-names {
+        font-size: 1rem;
+      }
+    }
+  }
+  .container-home {
+    height: 50vh;
+    .homepage-header {
+      text-align: center;
+      padding-top: 375px;
+      width: 75%;
+      margin: auto;
+      padding-left: 40px;
+      padding-right: 40px;
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
+  }
+  .social-bar {
+    margin-top: 10px;
+    margin-bottom: 0;
+    position: sticky;
+    bottom: 5px;
+    .fab {
+      font-size: 1.25rem;
+      &:hover {
+        color: whitesmoke;
+      }
+    }
+    .fas {
+      font-size: 1.25rem;
+      &:hover {
+        color: whitesmoke;
+      }
+    }
+  }
+  .material-names {
+    font-size: 2rem;
+  }
+  .row {
+    justify-content: center;
+  }
+  .decking-description {
+    background: #f0f0f0;
+    margin-top: 2vh;
+    margin-left: 4vw;
+    width: 91%;
+  }
+  .about-box {
+    overflow: scroll;
+  }
+}
+.btn-lg {
+  font-size: 1.05rem;
+  padding: 9px;
+}
+.card-body {
+  h2 {
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+  p {
+    display: none;
+  }
+}
