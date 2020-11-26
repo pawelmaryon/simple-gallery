@@ -1,11 +1,42 @@
+<div class="container-home row">
+    <div class="homepage-header text-center">
+        <h1>Create your garden a perfect outdoor living space with Deck Design</h1>
 
-  <div class="container-home">
-    <div class="homepage-header">
-      <h1 >Create your garden a perfect outdoor living space with Deck Design</h1> 
-      <%= link_to forms_new_path do %>
-      <div class="btn btn-secondary btn-lg">Enquiry</div>
-      <% end %>
+        <div class="search-homepage">
+            <div class="row search-input">
+                <div class="col-7 input-field-padding res-768px">
+                    <input class="input-field" type="text" placeholder="what would you like to build?">
+                </div>
+                <div class="col-5 btn btn-secondary btn-lg"><%= link_to "search products", deckings_index_path %></div>
+            </div>
+            <div class="btn btn-secondary btn-block quotes-padding"><%= link_to "Get Instant Quote!", root_path  %></div>
+        </div>
+
     </div>
-  </div>
-
-
+</div>
+<div class="container home-page-bottom">
+    <h2>Best products offered</h2>
+    <div class="row obj-center">
+        <div class="card col-md-3" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h2>Hardwood decking</h2>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card col-md-3" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h2>Softwood decking</h2>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card col-md-3" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h2>Budget decking</h2>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </div>
+</div>

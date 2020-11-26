@@ -1,4 +1,4 @@
-body  {
+body {
   margin: 0;
   padding: 0;
 }
@@ -6,6 +6,7 @@ a {
   color: rgb(222, 213, 203);
   &:hover {
     color: white;
+    text-decoration: none;
   }
   &:active {
     color: white;
@@ -14,8 +15,7 @@ a {
 
 // Specific CSS for your home-page
 .container {
-  background: rgba(202, 183, 162,0.5);
-  min-height: 100vh;
+  min-height: 50vh;
 }
 .links {
   text-decoration: none;
@@ -31,29 +31,52 @@ a {
   justify-content: center;
   align-items: center;
 }
-    .logo-image {
-      text-align: center;
-      width: 100px;
-    }
-.container-home {
-
-  background-image: url('https://res.cloudinary.com/dyvaldrrq/image/upload/c_crop,g_south,h_2800/v1588277202/Deck%20Design/Decking/hardwood/hardwood-decking-modern.jpg');
-  background-size: cover;
-  height: 92vh;
-  
-  .homepage-header {
-    text-align: center;
-   
-    padding-top: 20px;
-    width: 30%;
-    position: absolute;
-    left: 26%;
-    top: 16%;
-    h1 {
-      font-family: 'Bebas Neue', cursive;
-    }
+.logo-image {
+  text-align: center;
+  width: 100px;
 }
+.container-home {
+  background-image: url("https://res.cloudinary.com/dyvaldrrq/image/upload/c_crop,g_south,h_2800/v1588277202/Deck%20Design/Decking/hardwood/hardwood-decking-modern.jpg");
+  background-size: cover;
+  height: 50vh;
+
+  .homepage-header {
+    padding-top: 345px;
+    width: 54%;
+    padding-left: 80px;
+    h1 {
+      font-family: "Bebas Neue", cursive;
+    }
+    .search-homepage {
+      .quotes-padding {
+        padding: 1rem;
+      }
+      .search-input {
+        .input-field-padding {
+          padding: 10px 5px 10px 0;
+          border-radius: 2px;
+          .input-field {
+            height: 47px;
+            width: 100%;
+          }
+        }
+      }
+    }
   }
-  .product-header-h1 {
-    text-align: center;
+}
+.product-header-h1 {
+  text-align: center;
+}
+.home-page-bottom {
+  background: rgb(210, 210, 210);
+  h2 {
+    margin-left: 44px;
+    padding-top: 44px;
   }
+  .obj-center {
+    justify-content: space-around;
+  }
+  .card {
+    margin: 20px;
+  }
+}
