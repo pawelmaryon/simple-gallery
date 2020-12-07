@@ -16,6 +16,9 @@ p {
       margin: 5px;
       border-radius: 2px;
     }
+    .bg-light-gray {
+      background-color: rgb(220, 220, 220);
+    }
     .summary {
       padding: 5px;
       box-shadow: 0px 2px 17px #888;
@@ -45,6 +48,10 @@ p {
   .summary-items {
     margin-bottom: 15px;
   }
+  .waste-amount {
+    width: 35%;
+    background-color: rgb(150, 150, 150);
+  }
 }
 .calculator-header {
   margin: 1rem;
@@ -53,4 +60,9 @@ p {
 .calculator-footer {
   margin: 1rem;
   font-weight: 700;
+}
+.hidden {
+  display: none;
+}
+.decking-items {
 }
