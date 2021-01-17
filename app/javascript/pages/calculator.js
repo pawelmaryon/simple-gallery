@@ -1,5 +1,7 @@
-const materialName = document.querySelector('.material-name');
-const materialList = documant.querySelector('.material-list');
-materialName.addEventListener('click', function() {
-  
-})
+let materialName = document.querySelector('.material-name');
+let materialList = document.querySelector('.material-list');
+materialName.addEventListener('click', function() 
+{
+  console.log('button clicked');
+  materialList.classList.remove('hidden');
+});

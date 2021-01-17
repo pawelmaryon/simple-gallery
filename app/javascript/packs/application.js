@@ -4,3 +4,4 @@ require("channels")
 require("pages/calculator")
 
 import "bootstrap";
+
