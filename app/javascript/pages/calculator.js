@@ -7,8 +7,8 @@ materialName.addEventListener('click', function()
 {
   console.log('button clicked');
   materialList.classList.remove('hidden');
-  materialItem.addEventListener('click', function()
-  {
-    console.log('Material item clicked');
-  })
 });
+materialItem.addEventListener('click', function()
+{
+  console.log('Material item clicked');
+})
