@@ -6,7 +6,7 @@ const materialItem = document.querySelector('btn-item')
 materialName.addEventListener('click', function() 
 {
   console.log('button clicked');
-  materialList.classList.remove('hidden');
+  materialList.classList.toggle('hidden');
 });
 materialItem.addEventListener('click', function()
 {
