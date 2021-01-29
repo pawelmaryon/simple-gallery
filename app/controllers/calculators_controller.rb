@@ -11,8 +11,12 @@ class CalculatorsController < ApplicationController
       render :new
     end
   end
+
+  def decking
+    @calculator_item = Material.all
+  end
   private
   def material_params
-    params.require(:material_item).premit(:name, :lenght, :width, :height, :price)
+    params.require(:calculator_item).premit(:name, :length, :width, :height, :price)
   end
 end
