@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'calculators/new'
   get 'calculators/create'
+  get 'calculators/decking'
   devise_for :users
   get 'forms/show'
   get 'forms/new'
