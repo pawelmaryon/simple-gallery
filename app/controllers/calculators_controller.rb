@@ -1,10 +1,10 @@
 class CalculatorsController < ApplicationController
   def new
-    @calculator_item = Material.new
+    @calculator = Calculator.new
   end
 
   def create
-    @calculator_item = Material.new(material_params)
+    @calculator = Calculator.new(calculator_params)
     if @calculator_item.save
       redirect_to pages_calculator_path
     else
@@ -13,10 +13,10 @@ class CalculatorsController < ApplicationController
   end
 
   def decking
-    @calculator_item = Material.all
+    @calculator = Calculator.all
   end
   private
-  def material_params
-    params.require(:calculator_item).premit(:name, :length, :width, :height, :price)
+  def calculator_params
+    params.require(:calculator).premit(:name, :length, :width, :height, :price)
   end
 end
