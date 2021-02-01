@@ -5,8 +5,8 @@ class CalculatorsController < ApplicationController
 
   def create
     @calculator = Calculator.new(calculator_params)
-    if @calculator_item.save
-      redirect_to pages_calculator_path
+    if @calculator.save
+      redirect_to root_path
     else
       render :new
     end

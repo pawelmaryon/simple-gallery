@@ -1,7 +1,14 @@
 <h1>Calculators#new</h1>
 <p>Find me in app/views/calculators/new.html.erb</p>
 
+
+
 <%= form_for @calculator do |f| %>
-<%= f.input :name  %>
-<%= f.submit %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+
+  <%= f.label :length %>:
+  <%= f.text_field :length %><br />
+
+  <%= f.submit %>
 <% end %>
