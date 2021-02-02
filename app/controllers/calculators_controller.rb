@@ -17,6 +17,6 @@ class CalculatorsController < ApplicationController
   end
   private
   def calculator_params
-    params.require(:calculator).premit(:name, :length, :width, :height, :price)
+    params.require(:calculator).permit(:name, :length, :width, :height, :price)
   end
 end
