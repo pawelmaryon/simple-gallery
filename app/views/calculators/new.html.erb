@@ -18,3 +18,43 @@
 
   <%= f.submit %>
 <% end %>
+
+<div class="row calculator-outline">
+    <h1 class="col-sm-12 text-center calculator-header">Material calculator</h1>
+    
+    <div class="material-items row col-sm-12">
+        <div class="btn material-parameters material-name">
+            <p>Decking type</p>
+            <div class=' material-list hidden'>
+                <div ><p class=" btn btn-item">cedar decking</p></div>
+                <div ><p class=" btn btn-item">pine decking</p></div>
+                <div ><p class=" btn btn-item">larch decking</p></div>
+                <div ><p class=" btn btn-item">balau deckin</p></div>
+            </div> 
+        </div>
+        <div class="material-parameters length dimensions">
+            <p>length</p>
+        </div>
+        <div class="material-parameters dimensions">
+            <p>width</p>
+        </div>
+        <div class="material-parameters dimensions">
+            <p>height</p>
+        </div>
+        <div class="material-parameters dimensions">
+            <p>£</p>
+        </div>
+    </div>
+    <div class="material-items row col-sm-12 summary-items">
+        <div class="summary estimated-cost">
+            <p>Estimeted cost</p>
+        </div>
+        <div class="summary total-figure">
+            <p>£</p>
+        </div>
+        <div class="summary book-now-button">
+            <p>Book Now</p>
+        </div>
+    </div>
+    <h2 class="col-sm-12 text-center calculator-footer">Additional transport costs may apply</h2>
+</div>
