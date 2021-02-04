@@ -1,48 +1,37 @@
 <h1>Calculators#new</h1>
-<p>Find me in app/views/calculators/new.html.erb</p>
-
-
-
-<%= form_for @calculator do |f| %>
-  <%= f.label :name %>:
-  <%= f.text_field :name %><br />
-
-  <%= f.label :length %>:
-  <%= f.text_field :length %><br />
-
-  <%= f.label :width %>:
-  <%= f.text_field :width %><br />
-
-  <%= f.label :height %>:
-  <%= f.text_field :height %><br />
-
-  <%= f.submit %>
-<% end %>
-
 <div class="row calculator-outline">
     <h1 class="col-sm-12 text-center calculator-header">Material calculator</h1>
-    
+    <%= form_for @calculator do |f| %>
     <div class="material-items row col-sm-12">
         <div class="btn material-parameters material-name">
             <p>Decking type</p>
             <div class=' material-list hidden'>
-                <div ><p class=" btn btn-item">cedar decking</p></div>
+                <div ><p class=" btn btn-item">
+                    <%= f.label :name %>:
+                    <%= f.text_field :name %><br /></p>
+                </div>
                 <div ><p class=" btn btn-item">pine decking</p></div>
                 <div ><p class=" btn btn-item">larch decking</p></div>
                 <div ><p class=" btn btn-item">balau deckin</p></div>
             </div> 
         </div>
         <div class="material-parameters length dimensions">
-            <p>length</p>
+            <p>
+                <%= f.text_field :length, placeholder: 'length' %><br /></p>
         </div>
         <div class="material-parameters dimensions">
-            <p>width</p>
+            <p>
+                <%= f.text_field :width, placeholder: 'width' %><br /></p>
         </div>
         <div class="material-parameters dimensions">
-            <p>height</p>
+            <p>
+                <%= f.text_field :height, placeholder: 'height' %><br /></p>
         </div>
         <div class="material-parameters dimensions">
             <p>£</p>
+        </div>
+        <div class="material-parameters dimensions">
+            <%= f.submit %>
         </div>
     </div>
     <div class="material-items row col-sm-12 summary-items">
@@ -57,4 +46,5 @@
         </div>
     </div>
     <h2 class="col-sm-12 text-center calculator-footer">Additional transport costs may apply</h2>
+    <% end %>
 </div>
