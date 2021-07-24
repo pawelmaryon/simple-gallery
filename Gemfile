@@ -8,7 +8,7 @@ gem 'puma'
 gem 'rails', '6.0.2.2'
 gem 'redis'
 
-gem 'cloudinary', '~> 1.12.0'
+gem 'cloudinary', '~> 1.16.0'
 gem 'simple_form'
 
 gem 'autoprefixer-rails'
