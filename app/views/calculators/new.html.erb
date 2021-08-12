@@ -16,23 +16,24 @@
             </div> 
         </div>
         <div class="material-parameters length dimensions">
-            <p>
-                <%= f.number_field :length, placeholder: 'length' %><br /></p>
+            <p class= "mat-lenght" >
+                <%= f.number_field :length, placeholder: 'length', class: "box-properties m-length" %><br /></p>
         </div>
         <div class="material-parameters dimensions">
-            <p>
-                <%= f.number_field :width, placeholder: 'width' %><br /></p>
+            <p class= "mat-width">
+                <%= f.number_field :width, placeholder: 'width', class: "box-properties m-width" %><br /></p>
         </div>
         <div class="material-parameters dimensions">
-            <p>
-                <%= f.number_field :height, placeholder: 'height' %><br /></p>
+            <p class= "mat-height">
+                <%= f.number_field :height, placeholder: 'height',class: "box-properties m-height" %><br /></p>
         </div>
         <div class="material-parameters dimensions">
-            <p>£</p>
+            <p class="total-cost">£</p>
         </div>
         <div class="material-parameters dimensions">
-            <%= f.submit %>
+            <button class="btn sum-up-btn">Calculate</button>
         </div>
+  
     </div>
     <div class="material-items row col-sm-12 summary-items">
         <div class="summary estimated-cost">
@@ -42,7 +43,7 @@
             <p>£</p>
         </div>
         <div class="summary book-now-button">
-            <p>Book Now</p>
+            <%= f.submit "Book Now", class:"form-submit-btn"%>
         </div>
     </div>
     <h2 class="col-sm-12 text-center calculator-footer">Additional transport costs may apply</h2>
