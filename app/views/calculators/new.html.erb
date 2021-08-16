@@ -3,18 +3,16 @@
     <h1 class="col-sm-12 text-center calculator-header">Material calculator</h1>
     <%= form_for @calculator do |f| %>
     <div class="material-items row col-sm-12">
+
+
         <div class="btn material-parameters material-name">
-            <p>Decking type</p>
-            <div class=' material-list hidden'>
-                <div ><p class=" btn btn-item">
-                    <%= f.label :name %>:
-                    <%= f.text_field :name %><br /></p>
-                </div>
-                <div ><p class=" btn btn-item">pine decking</p></div>
-                <div ><p class=" btn btn-item">larch decking</p></div>
-                <div ><p class=" btn btn-item">balau deckin</p></div>
-            </div> 
-        </div>
+            <select name="deckings" id="material-list" >
+                <option value="">--decking type--</option>
+                <option value="pine-decking">Pine Decking</option>
+                <option value="larch-decking">Larch Decking</option>
+                <option value="balau-decking">Balau Decking</option>
+            </select>
+        </div> 
         <div class="material-parameters length dimensions">
             <p class= "mat-lenght" >
                 <%= f.number_field :length, placeholder: 'length', class: "box-properties m-length" %><br />
@@ -24,6 +22,119 @@
             <p class= "mat-width">
                 <%= f.number_field :width, placeholder: 'width', class: "box-properties m-width" %><br />
             </p>
+        </div>
+        <div class="material-parameters dimensions">
+            <p class= "mat-height">
+                <%= f.number_field :height, placeholder: 'height',class: "box-properties m-height" %><br />
+            </p>
+        </div>
+        <div class="material-parameters dimensions">
+            <p class="total-cost">£</p>
+        </div>
+        <div class="material-parameters dimensions">
+            <button class="btn sum-up-btn">Calculate</button>
+        </div>
+  
+    </div>
+    <div class="material-items row col-sm-12">
+
+
+        <div class="btn material-parameters material-name">
+            <select name="sandstone-patios" id="material-list" >
+                <option value="">--patio type--</option>
+                <option value="sawn-raj-green">Sawn Raj Green</option>
+                <option value="riven-mint">Riven Mint</option>
+                <option value="sawn-kandela-grey">Kandela Grey</option>
+            </select>
+        </div> 
+        <div class="material-parameters length dimensions">
+            <p class= "mat-lenght" >
+                <%= f.number_field :length, placeholder: 'length', class: "box-properties p-length" %><br />
+            </p>
+        </div>
+        <div class="material-parameters dimensions">
+            <p class= "mat-width">
+                <%= f.number_field :width, placeholder: 'width', class: "box-properties p-width" %><br />
+            </p>
+        </div>
+        <div class="material-parameters dimensions">
+           
+            <select name="pattern" id="material-list" class="p-size">
+            <option value="">--size--</option>
+            <option value="300/300">300x300</option>
+            <option value="300/450">300x450</option>
+            <option value="300/600">300x600</option>
+            <option value="600/600">600x600</option>
+            <option value="600/900">600x900</option>
+            </select>
+        </div>
+        <div class="material-parameters dimensions">
+            <p class="total-cost patio-cost">£</p>
+        </div>
+        <div class="material-parameters dimensions">
+            <button class="btn sum-up-btn patio-btn">Calculate</button>
+        </div>
+  
+    </div>
+    <div class="material-items row col-sm-12">
+
+
+        <div class="btn material-parameters material-name">
+            <select name="turfs" id="material-list" >
+                <option value="">--turf type--</option>
+                <option value="essex-turf">Essex Turf</option>
+                <option value="medalion-turf">Medalion Turf</option>
+                <option value="tough-sport-turf">Tough Sport Turf</option>
+            </select>
+        </div> 
+        <div class="material-parameters length dimensions">
+            <p class= "mat-lenght" >
+                <%= f.number_field :length, placeholder: 'length', class: "box-properties m-length" %><br />
+            </p>
+        </div>
+        <div class="material-parameters dimensions">
+            <p class= "mat-width">
+                <%= f.number_field :width, placeholder: 'width', class: "box-properties m-width" %><br />
+            </p>
+        </div>
+        <div class="material-parameters dimensions">
+            <p class= "mat-height">
+                N/A
+            </p>
+        </div>
+        <div class="material-parameters dimensions">
+            <p class="total-cost">£</p>
+        </div>
+        <div class="material-parameters dimensions">
+            <button class="btn sum-up-btn">Calculate</button>
+        </div>
+  
+    </div>
+    <div class="material-items row col-sm-12">
+
+
+        <div class="btn material-parameters material-name">
+            <select name="fencess" id="material-list" >
+                <option value="">--fence type--</option>
+                <option value="panel-fence">Panel Fence</option>
+                <option value="horizontal-slatted-fence">Horizontal Slatted Fence</option>
+                <option value="Vertical-slatted-fence">Vertical Slatted Fence</option>
+            </select>
+        </div> 
+        <div class="material-parameters length dimensions">
+            <p class= "mat-lenght" >
+                <%= f.number_field :length, placeholder: 'length', class: "box-properties m-length" %><br />
+            </p>
+        </div>
+        <div class="material-parameters dimensions">
+            
+            <select name="planks" id="material-list">
+            <option value="">--size--</option>
+            <option value="19x38-plank">19x38</option>
+            <option value="25x50">25x50</option>
+            <option value="19x70">19x70</option>
+            <option value="19x90">19x90</option>
+            </select>
         </div>
         <div class="material-parameters dimensions">
             <p class= "mat-height">
