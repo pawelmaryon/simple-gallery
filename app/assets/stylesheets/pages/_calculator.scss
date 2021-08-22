@@ -124,3 +124,16 @@ footer {
   background: center/cover no-repeat url("/media/cc0-images/hamster.jpg");
   position: relative;
 }
+//patio row
+#material-list-patio {
+  width: 100%;
+  border: none;
+  background: transparent;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  &:active {
+    border: none;
+    outline: none;
+  }}
