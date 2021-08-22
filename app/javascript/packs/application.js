@@ -9,7 +9,8 @@ const pine = document.querySelector(".pine");
 const larch = document.querySelector(".larch");
 const balau = document.querySelector(".balau");
 const materialName = document.querySelector('.material-name');
-const materialList = document.querySelector('.material-list');
+const materialList = document.getElementById('material-list');
+const materialListPatio = document.getElementById('material-list-patio');
 const materialItem = document.getElementsByClassName('btn-item');
 const lengthInput = document.querySelector('length');
 const materialLenght = Number(document.querySelector('m-lenght'));
@@ -53,20 +54,47 @@ const estimatedCost = document.querySelector(".total-figure");
       const widthValue = Number(calculatorWidth.value);
       const heightValue = Number(calculatorHeight.value);
       const lengthValue = Number(calculatorLength.value);
-      console.log(typeof calculatorLength, lengthValue);
-      console.log(typeof calculatorWidth, widthValue);
-      console.log(typeof calculatorHeight, heightValue);
-      const totalValue = "£" + lengthValue * widthValue * heightValue;
 
-      console.log(typeof totalValue, totalValue.toString());
-      console.log(totalCost.textContent = totalValue.toString());
+      let totalValue = lengthValue * widthValue;
+      if (materialList.value === "pine-decking") {
+        totalValue = "£" + totalValue * 150;
+      } else if (materialList.value === "larch-decking") {
+        totalValue = "£" + totalValue * 190;
+      } else if (materialList.value === "balau-decking"){
+        totalValue = "£" + totalValue * 250;
+      } else {
+        totalValue = "--N/A--"
+      }
+      totalCost.textContent = totalValue.toString();
       break;
-    case 'patio':
-      const patioWidthValue = Number(patioWidth.value);
-      const patioLengthValue = Number(patioLength.value);
-      const patioArea = (patioWidthValue * patioLengthValue)*120
-      
-      patioValue.textContent = "£" + patioArea.toString()
+      case 'patio':
+        const patioWidthValue = Number(patioWidth.value);
+        const patioLengthValue = Number(patioLength.value);
+        let patioArea = patioWidthValue * patioLengthValue
+        if (materialListPatio.value === "sawn-raj-green") {
+          if (patioSlabSize.value === "300/300") {
+              patioArea = patioArea * 200
+          } else if (patioSlabSize.value === "300/450") {
+            patioArea = patioArea * 180
+          } else if (patioSlabSize.value === "300/600") {
+            patioArea = patioArea * 170
+          } else if (patioSlabSize.value === "600/600") {
+            patioArea = patioArea * 160
+          } else if (patioSlabSize.value === "600/900") {
+            patioArea = patioArea * 175
+          } else if (patioSlabSize.value === "4-random") {
+            patioArea = patioArea * 220
+          } else {
+            patioArea = "--N/A--"
+          };
+        } else if (materialListPatio.value === "riven-mint") {
+          patioArea = patioArea * 150
+        } else if (materialListPatio.value === "sawn-kandela-grey") {
+          patioArea = patioArea * 210
+        } else {
+          patioArea = "--N/A--"
+        }
+        patioValue.textContent = "£" + patioArea.toString()
       break;
     case 'turf':
       const lawnWidthValue = Number(lawnWidth.value);
@@ -119,3 +147,4 @@ fenceButton.addEventListener("click", function (event) {
 })
 // const costSumUp = Number(materialCalculations('decking') + materialCalculations('patio') + materialCalculations('turf') + materialCalculations('fence'))
 // estimatedCost.textContent = costSumUp.toString()
+
