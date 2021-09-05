@@ -48,6 +48,7 @@ const fenceButton = document.querySelector(".fence-button");
 
 const estimatedCost = document.querySelector(".total-figure");
 
+
  function materialCalculations (type) {
   switch (type) { 
     case 'decking':
@@ -71,6 +72,7 @@ const estimatedCost = document.querySelector(".total-figure");
         const patioWidthValue = Number(patioWidth.value);
         const patioLengthValue = Number(patioLength.value);
         let patioArea = patioWidthValue * patioLengthValue
+        
         if (materialListPatio.value === "sawn-raj-green") {
           if (patioSlabSize.value === "300/300") {
               patioArea = patioArea * 200
@@ -88,7 +90,31 @@ const estimatedCost = document.querySelector(".total-figure");
             patioArea = "--N/A--"
           };
         } else if (materialListPatio.value === "riven-mint") {
-          patioArea = patioArea * 150
+
+          switch (patioSlabSize.value) {
+            case "300/300":
+              patioArea = patioArea * 180
+              break;
+            case "300/450":
+              patioArea = patioArea * 175
+              break;
+            case "300/600":
+              patioArea = patioArea * 160
+              break;
+            case "600/600":
+              patioArea = patioArea * 150
+              break;
+            case "600/900":
+              patioArea = patioArea * 175
+              break;
+            case "4-random":
+              patioArea = patioArea * 200
+              break;
+            case "":
+              patioArea = "--N/A--"
+              break;
+          }
+    
         } else if (materialListPatio.value === "sawn-kandela-grey") {
           patioArea = patioArea * 210
         } else {
