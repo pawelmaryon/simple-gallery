@@ -36,6 +36,7 @@ const lawnLength = document.querySelector(".t-length");
 const lawnWidth = document.querySelector(".t-width");
 const turfBtn = document.querySelector(".t-btn");
 const turfValue = document.querySelector(".turf-cost");
+const turfType = document.querySelector(".t-type");
 
 //fence
 
@@ -116,17 +117,52 @@ const estimatedCost = document.querySelector(".total-figure");
           }
     
         } else if (materialListPatio.value === "sawn-kandela-grey") {
-          patioArea = patioArea * 210
+          switch (patioSlabSize.value) {
+            case "300/300":
+              patioArea = patioArea * 210
+              break;
+            case "300/450":
+              patioArea = patioArea * 200
+              break;
+            case "300/600":
+              patioArea = patioArea * 190
+              break;
+            case "600/600":
+              patioArea = patioArea * 160
+              break;
+            case "600/900":
+              patioArea = patioArea * 200
+              break;
+            case "4-random":
+              patioArea = patioArea * 230
+              break;
+            case "":
+              patioArea = "--N/A--"
+              break;
+          }
         } else {
           patioArea = "--N/A--"
         }
-        patioValue.textContent = "£" + patioArea.toString()
+        patioValue.textContent =  patioArea.toString()
       break;
     case 'turf':
       const lawnWidthValue = Number(lawnWidth.value);
       const lawnLengthValue = Number(lawnLength.value)
-
-      const lawnArea = (lawnWidthValue * lawnLengthValue)*30
+      let lawnArea = (lawnWidthValue * lawnLengthValue)
+      switch (turfType.value) {
+        case ("essex-turf"):
+        lawnArea = lawnArea * 30
+        break;
+        case ("medalion-turf"):
+          lawnArea = lawnArea * 35
+          break;
+        case ("tough-sport-turf"):
+          lawnArea = lawnArea * 45
+          break;
+        case (""):
+          lawnArea = "--N/A--"
+          break;
+      }
       turfValue.textContent = "£" + lawnArea.toString()
       console.log('turf');
       break;
@@ -149,8 +185,8 @@ sumUpBtn.addEventListener('click', function (event) {
 patioButton.addEventListener("click", function(event) {
 event.preventDefault();
 materialCalculations('patio');
-const updatedEstimatedCost = Number(estimatedCost.textContent.substring(1));
-const updatedPatioValue = Number(patioValue.textContent.substring(1));
+const updatedEstimatedCost = Number(totalCost.textContent.substring(1));
+const updatedPatioValue = Number(patioValue.textContent);
 const updatedCost = updatedEstimatedCost + updatedPatioValue
  return estimatedCost.textContent = "£" + updatedCost.toString();
 });
@@ -161,7 +197,7 @@ turfBtn.addEventListener("click", function(event) {
   const updatedEstimatedCost = Number(estimatedCost.textContent.substring(1));
   const updatedTurfValue = Number(turfValue.textContent.substring(1))
   const updatedCost = updatedEstimatedCost + updatedTurfValue
-  return estimatedCost.textContent = "£" + updatedCost.toString();
+  return estimatedCost.textContent =  updatedCost.toString();
 });
 fenceButton.addEventListener("click", function (event) {
   event.preventDefault()
