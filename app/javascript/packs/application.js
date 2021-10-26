@@ -47,7 +47,7 @@ const fenceButton = document.querySelector(".fence-button");
 
 //estimated cost summary
 
-const estimatedCost = document.querySelector(".total-figure");
+let estimatedCost = document.querySelector(".total-figure");
 
 
  function materialCalculations (type) {
