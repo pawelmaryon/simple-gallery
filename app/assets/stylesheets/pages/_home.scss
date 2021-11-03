@@ -68,16 +68,24 @@ a {
   text-align: center;
 }
 .home-page-bottom {
-  background: rgb(210, 210, 210);
+  background: #D2D3C8;
   h2 {
+    text-align: center;
     margin-left: 44px;
-    padding-top: 44px;
+    padding-top: 24px;
   }
   .obj-center {
     justify-content: space-around;
   }
   .card {
     margin: 20px;
+    box-shadow: 5px 10px 8px 10px #D2D3C8;
+  }
+  .card-link {
+    color: black;
+  }
+  .bottom-card {
+    background: rgba(236, 179, 112, 0.2);
   }
 }
 .inner {
@@ -86,3 +94,13 @@ a {
   align-items: center;
   justify-content: center;
 }
+.info {
+  background: #14856F;
+}
+.form-position {
+  padding: 20px;
+  width: 50%;
+  margin: 10% auto;
+  box-shadow: 0px 0px 50px 2px rgb(200, 200, 200);
+}
+

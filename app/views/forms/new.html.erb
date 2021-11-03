@@ -1,21 +1,23 @@
-<%= simple_form_for (@form) do |f| %>
-  <%= f.input :first_name, 
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "first_name" }%>
-  <%= f.input :last_name, 
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "last_name" }%>
-  <%= f.input :address %>
+<div class="form-position">
+  <%= simple_form_for (@form) do |f| %>
+    <%= f.input :first_name, 
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "first_name" }%>
+    <%= f.input :last_name, 
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "last_name" }%>
+    <%= f.input :address %>
 
-  <%= f.input :email,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "email" }%>
-  <%= f.input :"description",
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "description" }%>
-  <%= f.submit "Submit", class: "btn btn-secondary btn-lg btn-block" %>
-<% end %>
+    <%= f.input :email,
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "email" }%>
+    <%= f.input :"description",
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "description" }%>
+    <%= f.submit "Submit", class: "btn btn-secondary btn-lg btn-block" %>
+  <% end %>
+</div>
