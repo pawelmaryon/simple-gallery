@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
-ruby '2.6.5'
+ruby '3.0.6'
 
-gem 'bootsnap', require: false
+gem 'bootsnap', '>= 1.7.7'
+
 gem 'jbuilder', '~> 2.0'
-gem 'pg', '~> 0.21'
+gem 'pg', '>= 1.1'
 gem "puma", ">= 4.3.8"
-gem 'rails', '6.0.2.2'
+gem 'rails', '7.0.6'
 gem 'redis'
 
 gem 'cloudinary', '~> 1.16.0'
@@ -27,8 +28,8 @@ end
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
-  gem 'listen', '~> 3.0.5'
+  gem 'listen', '>= 3.3'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen', '>= 2.0.1'
   gem 'dotenv-rails'
 end
